@@ -1,31 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo"><img src="" alt="logo"></div>
-            <h1>Монгол бичгийн дүрмийн толь</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assests/style.css" rel="stylesheet" type="text/css">
+        <link href="assests/stylea.css" rel="stylesheet" type="text/css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="navHeader">
+            <nav class="navbar">
+                <img src="assests/photos/5.jpg" alt="logo" class="logo">
+                <h1>Монгол бичгийн дүрмийн толь</h1>
+                <div class="navAuth">
+                    <button class="btn"><i class='fas fa-user-alt'></i> Нэвтрэх</button>
+                    <button class="btn"><i class='fas fa-question-circle'></i>
+                        Заавар</button>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="mainheader">
+                <div>
+                    <input type="text">
+                    <button>хайх</button>
+                </div>
+                <button>Сануулсан дүрэм</button>
+            </section>
+            <section class="menuGrammar">
+                <article>
+                    <article>
+                        Үсэг
+                        <ul>
+                            <li><a href="#">Үсэг</a></li>
+                            <li><a href="#">Үсэг</a></li>
+                            <li><a href="#">Үсэг</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        Нөхцөл
+                        <ul>
+                            <li><a href="#">Үсэг</a></li>
+                            <li><a href="#">Үсэг</a></li>
+                            <li><a href="#">Үсэг</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        Дагавар
+                        <ul>
+                            <li><a href="#">Үсэг</a></li>
+                            <li><a href="#">Үсэг</a></li>
+                            <li><a href="#">Үсэг</a></li>
+                        </ul>
+                    </article>
+                </article>
+                <article class="tables">
+                    <table>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+
+        </main>
+        <footer>
+            <h2>Холбоо барих</h2>
             <ul>
-                <li><button>Нэвтрэх</button></li>
-                <li><button>Ашиглах заавар</button></li>
+                <li>facebook</li>
+                <li>email</li>
+                <li>Утас</li>
+                <li>Хаяг</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="mainheader">
-            <ul>
-                <li>alskdf</li>
-                <li>alskdf</li>
-                <li>alskdf</li>
-            </ul>
-        </section>
-    </main>
-    <footer></footer>
-    
-</body>
+            <form action="#">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <button>Илгээх</button>
+            </form>
+        </footer>
+
+    </body>
 </html>

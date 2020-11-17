@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap');
+:root {
+    --main-bg-color:  #ffd11a;
+    --light-blue-color:#3f51b5;
+    --grey:#e1e1e1;
+    --max-width-font-size:21px;
+    --avg-width-font-size:18px;
+}
+
 body,html{
-    font-family: 'Xanh Mono', monospace;
+    font-family: 'Hanh','Mono', sans-serif;
     display: block;
     margin: 0;
     padding: 0;
+    font-size: var(--max-width-font-size);
 }
 
 .homeHeader{
@@ -12,7 +23,7 @@ body,html{
     background-image: url("photos/1.jpg");
     background-color: #fff;
     background-position: center;
-    opacity: 0.9;
+    opacity: 1;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -24,7 +35,7 @@ body,html{
     top: 8vh;
     width: 100%;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     text-shadow: 2px 2px 8px rgba(0,0,0,1);
     animation: 2s 1 homeh1;
@@ -101,19 +112,76 @@ body,html{
         color: #fff;
     }
 }
+/* =====================home page css================ */
 
+.navHeader{
+    position: relative;
+    height: 10vh;
+    margin: 0px;
+    margin-bottom: 5vh;
+}
 
+.navbar{
+    width: 100%;
+    height: 100%;
+    background: var(--main-bg-color);    
+    display: flex;
+    /* flex-direction: row; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 15px 8px -15px #111;    
+}
 
+.navbar h1{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Lobster','hanh','sans-serif';
+    text-shadow: 1px 1px 8px rgba(0,0,0,1);
 
+}
 
+.navAuth{
+    position: absolute;
+    top: 3vh;
+    right: 2%;
+}
 
+.logo{
+    width: 7%;
+    height: auto !important;
+    position: absolute;
+    left: 3%;
+    border-radius: 10px;
+}
+
+/* ==================main css========================= */
+
+.mainheader{
+    display: flex;
+}
 
 /* ===================buttonn css===================== */
 
+.btn{
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border-radius:15px ;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    background: #fff;
+    margin:5px;
+    box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.btn:hover{
+    transform: scale(1.1);
+}
 .grammarBtn{
     margin-top: 70vh;
     margin-left: 48%;
-    padding: 50px 20px;
+    padding: 30px 15px;
     background: none;
     background-color: white;
     border: none;
@@ -123,7 +191,7 @@ body,html{
 }
 .grammarBtn:hover{
    border:  2px solid #000000;
-    transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 
@@ -131,7 +199,7 @@ body,html{
 
 @media only screen and (max-width: 1300px){
     .homeHeader h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .grammarBtn{
         padding: 20px 10px;
@@ -140,7 +208,7 @@ body,html{
 
 @media only screen and (max-width: 600px){
     .homeHeader h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .grammarBtn{
         padding: 20px 10px;

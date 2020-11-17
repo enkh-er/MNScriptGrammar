@@ -1,8 +1,15 @@
+:root {
+    --main-bg-color:  #ffd11a;
+    --light-blue-color:#3f51b5;
+    --max-width-font-size:22px;
+    --avg-width-font-size:18px;
+}
+
 .bichig {
     margin: 2px 1px 0px 1px;
     padding: 0px;
     font-family: 'Mongolian White';
-    font-size : 4rem;
+    font-size : var(--max-width-font-size);
     font-weight: 400;
     -moz-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
@@ -18,7 +25,7 @@
     margin: 2px 1px 0px 1px;
     padding: 0px;
     font-family: 'Mongolian Writing';
-    font-size : 5rem;
+    font-size : var(--max-width-font-size);
     font-weight: 700;
     -moz-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
@@ -30,7 +37,12 @@
     text-justify: inter-ideograph;
     text-align:right;
     }
-
+    .bichigwH1{
+        font-size : 4rem;
+    }
+    .bichigH2{
+        font-size : 3rem;
+    }
     .bichiga {
         margin: 2px 1px 0px 1px;
         padding: 0px;
@@ -54,18 +66,18 @@
 /* ===================== media query ====================== */
   
      @media only screen and (max-width: 1300px){
-        .bichig{
-            font-size : 2.5rem;
+        .bichigH2{
+            font-size : 2rem;
         }
-        .bichigw{
-            font-size : 3.5rem;
+        .bichigwH1{
+            font-size : 3rem;
         }
     }
     @media only screen and (max-width: 600px){
-        .bichig{
-            font-size : 2rem;
+        .bichigH2{
+            font-size : 1.5rem;
         }
-        .bichigw{
-            font-size : 3rem;
+        .bichigwH1{
+            font-size : 2.5rem;
         }
     }
