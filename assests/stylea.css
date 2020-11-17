@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "stylemn.css";
+@font-face {
+font-family: 'Mongolian White';
+src:local('Mongolian White'), url('mnglwhiteaat.ttf') format('truetype');
+src:local('Mongolian White'), url('mnglwhiteotf.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Mongolian Writing';
+    src:local('Mongolian Writing'), url('mnglwritingaat.ttf') format('truetype');
+    src:local('Mongolian Writing'), url('mnglwritingotf.ttf') format('truetype');
+}
