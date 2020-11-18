@@ -11,7 +11,9 @@
     <body>
         <header class="navHeader">
             <nav class="navbar">
-                <img src="assests/photos/5.jpg" alt="logo" class="logo">
+                <div class="logo">
+                    <span class="bichigw">ᠡᠬᠡ<br>ᠬᠡᠯᠡ<br>ᠮᠢᠨᠦ</span>
+                </div>
                 <h1>Монгол бичгийн дүрмийн толь</h1>
                 <div class="navAuth">
                     <button class="btn"><i class='fas fa-user-alt'></i> Нэвтрэх</button>
@@ -23,15 +25,15 @@
         <main class="main">
             <section class="mainheader">
                 <div>
-                    <input type="text">
-                    <button>хайх</button>
+                    <input type="text" class="searchInput">
+                    <button class="btn btnPrimary">хайх</button>
                 </div>
-                <button>Сануулсан дүрэм</button>
+                <button class="btn">Сануулсан дүрэм</button>
             </section>
             <section class="menuGrammar">
-                <article>
-                    <article>
-                        Үсэг
+                <article class="sidebar">
+                    <article class="article">
+                        <h3>Үсэг</h3>
                         <ul>
                             <li><a href="#">Үсэг</a></li>
                             <li><a href="#">Үсэг</a></li>
@@ -39,7 +41,7 @@
                         </ul>
                     </article>
                     <article>
-                        Нөхцөл
+                        <h3>Нөхцөл</h3>
                         <ul>
                             <li><a href="#">Үсэг</a></li>
                             <li><a href="#">Үсэг</a></li>
@@ -47,7 +49,7 @@
                         </ul>
                     </article>
                     <article>
-                        Дагавар
+                        <h3> Дагавар</h3>
                         <ul>
                             <li><a href="#">Үсэг</a></li>
                             <li><a href="#">Үсэг</a></li>
@@ -56,6 +58,10 @@
                     </article>
                 </article>
                 <article class="tables">
+                    <div>
+                        <button>Өмнөх</button>
+                        <button>Дараах</button>
+                    </div>
                     <table>
                         <tr>
                             <th>Firstname</th>
@@ -79,6 +85,10 @@
                         </tr>
                     </table>
                 </article>
+                <div>
+                    <button>Өмнөх</button>
+                    <button>Дараах</button>
+                </div>
             </section>
 
         </main>
@@ -90,13 +100,8 @@
                 <li>Утас</li>
                 <li>Хаяг</li>
             </ul>
-            <form action="#">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <textarea name="" id="" cols="30" rows="5"></textarea>
-                <button>Илгээх</button>
-            </form>
+            <hr>
+            <div class="gem">Created by Enkhgem in 2020</div>
         </footer>
 
     </body>

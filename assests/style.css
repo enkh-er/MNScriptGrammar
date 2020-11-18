@@ -4,9 +4,13 @@
 :root {
     --main-bg-color:  #ffd11a;
     --light-blue-color:#3f51b5;
-    --grey:#e1e1e1;
+    --gray:#e1e1e1;
     --max-width-font-size:21px;
     --avg-width-font-size:18px;
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+    --wp-admin-theme-color-darkest:#0a314d;;
 }
 
 body,html{
@@ -16,12 +20,17 @@ body,html{
     padding: 0;
     font-size: var(--max-width-font-size);
 }
-
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+button,a{
+    cursor: pointer;
+}
 .homeHeader{
     width: 100%;
     height: 100vh;
-    background-image: url("photos/1.jpg");
-    background-color: #fff;
+    background-image: url("photos/2.jpg");
+    /* background-color: var(--wp-admin-theme-color-darkest); */
     background-position: center;
     opacity: 1;
     background-repeat: no-repeat;
@@ -116,16 +125,18 @@ body,html{
 
 .navHeader{
     position: relative;
+    width: 100%;
     height: 10vh;
     margin: 0px;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 .navbar{
     width: 100%;
     height: 100%;
-    background: var(--main-bg-color);    
+    background: var(--wp-admin-theme-color-darker-10);    
     display: flex;
+    overflow: hidden;
     /* flex-direction: row; */
     text-align: center;
     align-items: center;
@@ -149,35 +160,88 @@ body,html{
 }
 
 .logo{
-    width: 7%;
+    padding: 5px;
     height: auto !important;
     position: absolute;
     left: 3%;
     border-radius: 10px;
+    border: 1px solid #fff;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 /* ==================main css========================= */
 
 .mainheader{
     display: flex;
+    padding: 3vh 3%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--wp-admin-theme-color); */
 }
 
+.searchInput{
+    outline: none;
+    height: 3vh;
+    width: 350px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+.menuGrammar{
+    margin: 20px;
+    display: flex;
+}
+.sidebar{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 20px;
+    border-radius:20px;
+    width: 20%;
+}
+.sidebar h3{
+    color:var(--wp-admin-theme-color-darkest);
+}
+.sidebar ul li{
+    list-style: none;
+    padding: 5px;
+    color: var(--wp-admin-theme-color-darker-10);
+}
+/* .sidebar ul li a{
+    text-decoration: solid;
+}
+.sidebar ul li a:hover{
+    text-decoration: solid;
+
+} */
 /* ===================buttonn css===================== */
 
 .btn{
     outline: none;
     border: none;
     padding: 10px 10px;
-    border-radius:15px ;
+    border-radius: 5px ;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
     background: #fff;
     margin:5px;
+    color: var(--wp-admin-theme-color-darkest);
     box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
 }
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
+    opacity: 0.9;
 }
+
+.btnPrimary{
+    background: var(--wp-admin-theme-color);
+    color: #fff;
+}
+
 .grammarBtn{
     margin-top: 70vh;
     margin-left: 48%;
@@ -194,7 +258,17 @@ body,html{
    transform: scale(1.1);
 }
 
-
+footer{
+    background: var(--wp-admin-theme-color-darker-20);
+    /* display: flex; */
+    margin-bottom: 0;
+}
+.gem{
+    padding: 20px 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
 /* ===================== media query ====================== */
 
 @media only screen and (max-width: 1300px){
