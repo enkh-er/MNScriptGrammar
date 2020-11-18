@@ -17,6 +17,7 @@ body,html{
     font-family: 'Hanh','Mono', sans-serif;
     display: block;
     margin: 0;
+    overflow-x: hidden !important;
     padding: 0;
     font-size: var(--max-width-font-size);
 }
@@ -199,25 +200,53 @@ button,a{
     overflow: hidden;
     border: 1px solid #ccc;
     display: block;
-    padding: 20px;
-    border-radius:20px;
+    /* padding: 20px; */
+    border-radius:10px;
     width: 20%;
+    box-shadow: 0px 3px 5px #ccc;
+}
+.sidebar .heading{
+    padding: 10px 0px;
+    color: #fff;
+    position: relative;
+    margin: 0;
+    text-align: center;
+    background-color: var(--wp-admin-theme-color);
+    text-shadow: 0px 1px 0px rgba(0,0,0,1);
 }
 .sidebar h3{
     color:var(--wp-admin-theme-color-darkest);
+    padding: 0;
+    text-shadow: 0px 0.5px 0px rgba(0,0,0,1);
+    margin-bottom: 0;
 }
 .sidebar ul li{
     list-style: none;
     padding: 5px;
     color: var(--wp-admin-theme-color-darker-10);
 }
-/* .sidebar ul li a{
-    text-decoration: solid;
+.sidebar ul li a{
+    /* text-decoration: solid; */
 }
 .sidebar ul li a:hover{
-    text-decoration: solid;
+    text-decoration: none;
 
-} */
+}
+
+.tables{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tables table {
+    border-collapse: collapse;
+}
+
+.tables th, td{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
 /* ===================buttonn css===================== */
 
 .btn{
