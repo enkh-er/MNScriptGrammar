@@ -331,12 +331,20 @@ footer{
     background: var(--wp-admin-theme-color-darker-20);
     /* display: flex; */
     margin-bottom: 0;
+    text-align: center;
+    color: #fff;
 }
+
+footer img{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    margin: 10px 20px;
+}
+
 .gem{
     padding: 20px 0px;
     width: 100%;
-    color: #fff;
-    text-align: center;
 }
 /* ===================== media query ====================== */
 
