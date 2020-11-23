@@ -42,7 +42,6 @@ export default class Datas {
                 console.log("datas:", datas)
             });
             gebi(targetElement).innerHTML = datas;
-            console.log(this._dataList);
             this.DownloadTableDatas();
             this.setTableDatas();
         });
@@ -58,6 +57,8 @@ export default class Datas {
                 console.log("datas:", datas)
             });
             gebi(targetElement).innerHTML = datas;
+            this.DownloadTableDatas();
+            this.setTableDatas();
         });
     }
 
