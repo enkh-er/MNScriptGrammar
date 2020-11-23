@@ -37,9 +37,9 @@ export default class Datas {
             result.forEach(element => {
                 this._dataList.push(element);
                 datas = datas + (
-                    new SideBarData(element.header, element.content).Render()
-                )
-                console.log("datas:", datas)
+                        new SideBarData(element.header, element.content).Render()
+                    )
+                    // console.log("datas:", datas)
             });
             gebi(targetElement).innerHTML = datas;
             this.DownloadTableDatas();
@@ -52,9 +52,9 @@ export default class Datas {
             var datas = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
             result.forEach(element => {
                 datas = datas + (
-                    new SideBarData(element.header, element.content).Render()
-                )
-                console.log("datas:", datas)
+                        new SideBarData(element.header, element.content).Render()
+                    )
+                    // console.log("datas:", datas)
             });
             gebi(targetElement).innerHTML = datas;
             this.DownloadTableDatas();
@@ -64,7 +64,7 @@ export default class Datas {
 
     DownloadTableDatas() {
         getData(this._talbeDataUrl, (result) => {
-            console.log(result);
+            // console.log(result);
             this._tableDataList.push(result);
         });
     }
@@ -73,21 +73,21 @@ export default class Datas {
 
     setTableDatas() {
         var str;
-        this._listButton = Array.from(document.querySelectorAll('#listBtn'))
-        console.log(this._listButton);
+        this._listButton = Array.from(document.querySelectorAll('.sidebarBtn'))
+            // console.log(this._listButton);
         this._listButton.forEach((route) => route.addEventListener('click', () => {
             let val = route.value;
             this._dataList.forEach((dList) => {
-                console.log(dList.content);
-                let row = dList.content;
-                row.forEach((d) => {
-                    console.log(d);
-                    if (d.list === val) {
-                        str = new TableData(d.data.title, d.data.tableHeades, d.data.tableDatas).Render();
-                    }
+                    // console.log(dList.content);
+                    let row = dList.content;
+                    row.forEach((d) => {
+                        // console.log(d);
+                        if (d.list === val) {
+                            str = new TableData(d.data.title, d.data.tableHeades, d.data.tableDatas).Render();
+                        }
+                    })
                 })
-            })
-            console.log(str);
+                // console.log(str);
             gebi('table').innerHTML = str;
         }, false))
     }

@@ -4,8 +4,6 @@ export default class TableData {
         this.title = title
         this.tableTitles = tableTitles
         this.tableDatas = tableDatas
-        console.log("tabe" + tableTitles);
-        console.log("tabe" + tableDatas);
     }
 
     tHead() {

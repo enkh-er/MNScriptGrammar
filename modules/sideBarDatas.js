@@ -7,14 +7,14 @@ export default class SideBarData {
     list() {
         let str = ' ';
         this.content.forEach(element => {
-            str = str + '<li><button id="listBtn" class="sidebarBtn" value="' + element.list + '">' + element.list + '</button></li>';
+            str = str + '<li><button class="sidebarBtn" value="' + element.list + '">' + element.list + '</button></li>';
         })
         return str
     }
     Render() {
         return `
                 <article class="article">
-                    <h3 class="heading">${this.header}</h3>
+                    <p class="heading">${this.header}</p>
                     <ul>
                     ${this.list()}
                     </ul>
