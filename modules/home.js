@@ -10,7 +10,7 @@ export default class HomePage {
             <div class="menu-btn-container">
                 <span style="font-size:30px;cursor:pointer" id="openNav">&#9776;</span>
             </div>
-            <h1>Монгол бичгийн дүрмийн хураангуй</h1>
+            <h1>Монгол бичгийн зөв бичих дүрмийн хураангуй</h1>
             <div class="dropdown-menu">
 
                 <span class="dropbtn"><i class='fas fa-user-alt'></i></span>

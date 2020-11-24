@@ -32,9 +32,8 @@ export default class Datas {
         var datas = '';
         this._dataList.forEach(element => {
             datas = datas + (
-                    new SideBarData(element.header, element.content).Render()
-                )
-                // console.log("datas:", datas)
+                new SideBarData(element.header, element.content).Render()
+            )
         });
         gebi(targetElement).innerHTML = datas;
         this.setTableDatas();
