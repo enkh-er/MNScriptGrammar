@@ -23,9 +23,7 @@ export default class HomePage {
             </div>
 
         </nav>
-        <section id="sidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        </section>
+        <section id="sidenav" class="sidenav"></section>
     </header>
     <main class="main">
         <section class="mainNav">
@@ -80,16 +78,6 @@ export default class HomePage {
             <span><i class='fab fa-instagram'></i></span>
         </section>
     </footer>
-
-    <script>
-        function openNav() {
-            document.getElementById("sidenav").style.width = "50%";
-        }
-
-        function closeNav() {
-            document.getElementById("sidenav").style.width = "0";
-        }
-    </script>
                 `
     }
 }

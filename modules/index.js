@@ -21,9 +21,8 @@ export default class Datas {
             result.forEach(element => {
                 this._dataList.push(element);
             });
-            this.setSideNav("sidenav");
             this.setSidebar("sidebar");
-            this.setTableDatas();
+            this.setSideNav("sidenav");
         });
     }
 
@@ -36,20 +35,32 @@ export default class Datas {
                 // console.log("datas:", datas)
         });
         gebi(targetElement).innerHTML = datas;
+        this.setTableDatas();
     }
 
     setSideNav(targetElement) {
-        let btn = document.querySelector('#openNav');
+        let openbtn = document.querySelector('#openNav');
 
+        openbtn.addEventListener('click', () => {
+            var datas = '<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>';
+            this._dataList.forEach(element => {
+                datas = datas + (
+                    new SideBarData(element.header, element.content).Render()
+                )
+            });
+            gebi(targetElement).innerHTML = datas;
+            document.getElementById("sidenav").style.width = "50%";
+            this.setTableDatas();
+            this.closeSideBar();
+        })
 
-        var datas = '<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>';
-        this._dataList.forEach(element => {
-            datas = datas + (
-                new SideBarData(element.header, element.content).Render()
-            )
-        });
-        gebi(targetElement).innerHTML = datas;
+    }
 
+    closeSideBar() {
+        let closeBtn = document.querySelector('#closeNav');
+        closeBtn.addEventListener('click', () => {
+            document.getElementById("sidenav").style.width = "0";
+        })
     }
 
     setTableDatas() {
