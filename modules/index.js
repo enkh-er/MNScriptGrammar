@@ -3,6 +3,8 @@ import SideBarData from './sideBarDatas.js';
 import TableData from './tableDatas.js';
 import StartPage from './start.js'
 import HomePage from './home.js'
+import Content from './content.js'
+import Contact from './contact.js'
 
 export default class Datas {
 
@@ -81,14 +83,29 @@ export default class Datas {
         }, false))
     }
 
+    navigateTo() {
+        let homePageBtn = document.querySelector('#homePageBtn');
+        let contactPageBtn = document.querySelector("#contactPageBtn");
+        homePageBtn.addEventListener('click', () => {
+            gebi('mainBody').innerHTML = new Content().Render();
+            this.setSidebar("sidebar");
+        })
+        contactPageBtn.addEventListener('click', () => {
+            gebi('mainBody').innerHTML = new Contact().Render();
+        })
+    }
+
     start() {
         let str = new StartPage().Render();
         let str2 = new HomePage().Render();
-        gebi('main').innerHTML = str;
+        let str3 = new Content().Render();
+        gebi('root').innerHTML = str;
         let btn = document.querySelector('#startBtn');
         btn.addEventListener('click', () => {
-            gebi('main').innerHTML = str2;
+            gebi('root').innerHTML = str2;
+            gebi('mainBody').innerHTML = str3;
             this.DownloadData();
+            this.navigateTo();
         })
 
     }

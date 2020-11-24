@@ -25,48 +25,24 @@ export default class HomePage {
         </nav>
         <section id="sidenav" class="sidenav"></section>
     </header>
-    <main class="main">
+    <main id="main">
         <section class="mainNav">
             <nav class="mainNavbar">
                 <ul>
                     <li>
-                        <button>Нүүр хуудас</button>
+                        <button id="homePageBtn">Нүүр хуудас</button>
                     </li>
                     <li>
-                        <button>Холбоо барих</button>
+                        <button id="contactPageBtn">Холбоо барих</button>
                     </li>
                 </ul>
             </nav>
         </section>
-        <section class="mainheader">
-            <form>
-                <input type="text" id="search" aria-label="Justify" class="searchInput" required>
-                <button id="searchBtn" class="btn btnPrimary" type="submit">хайх</button>
-            </form>
-            <button class="btn">Сануулсан дүрэм</button>
-        </section>
-        <section class="menuGrammar">
-            <article id="sidebar" class="sidebar"></article>
-            <article id="table" class="tables">
-                <h1 style="text-align: center;">Монгол бичгийн зөв бичих дүрмийн хураангуй</h1>
-                <div class="card">Монгол бичиг нь монголын ард түмний соёл, мэдлэгийн санг олон үеийн турш тээж ирсэн бичиг тул нийтээр сурч эзэмших, түгээн дэлгэрүүлэх явдлыг төрийн бодлогоор дэмжиж “Монгол бичгийн үндэсний хөтөлбөр”-ийг хэрэгжүүлэн их дээд сургуульд
-                    элсэгчдийн элсэлтийн ерөнхий шалгалт, төрийн албан хаагчийн шалгалтанд монгол бичгийн мэдлэг шалгах сорил нэмэгдэн орж байгаа билээ. Мөн Монгол хэлний тухай хуульд зааснаар дунд болон урт хугацааны үндэсний хөтөлбөр боловсруулж хос
-                    бичигтэн болох зорилтыг тавьж буй тул орчин үеийн мэдлэг боловсролтой монгол иргэний хувьд үндэсний монгол бичгээ сурч эзэмших нь чухал ач холбогдолтой болоод байна</div>
-                <div class="card">Монгол бичиг нь монголын ард түмний соёл, мэдлэгийн санг олон үеийн турш тээж ирсэн бичиг тул нийтээр сурч эзэмших, түгээн дэлгэрүүлэх явдлыг төрийн бодлогоор дэмжиж “Монгол бичгийн үндэсний хөтөлбөр”-ийг хэрэгжүүлэн их дээд сургуульд
-                    элсэгчдийн элсэлтийн ерөнхий шалгалт, төрийн албан хаагчийн шалгалтанд монгол бичгийн мэдлэг шалгах сорил нэмэгдэн орж байгаа билээ. Мөн Монгол хэлний тухай хуульд зааснаар дунд болон урт хугацааны үндэсний хөтөлбөр боловсруулж хос
-                    бичигтэн болох зорилтыг тавьж буй тул орчин үеийн мэдлэг боловсролтой монгол иргэний хувьд үндэсний монгол бичгээ сурч эзэмших нь чухал ач холбогдолтой болоод байна</div>
-
-            </article>
-        </section>
-
+        <section id="mainBody"></section>
     </main>
     <footer>
         <section class="contactUs">
             <p>Холбоо барих</p>
-
-            <!-- <span> <i class='fas fa-mail-bulk'></i></span>
-            <span><i class='fab fa-phone-square-alt'></i></span>
-            <span><i class='fab fa-placeholder'></i></span> -->
             <a href="#"><img src="assests/photos/gmail.svg" alt="facebook"></a>
             <a href="#"><img src="assests/photos/telephone.svg" alt="instagram"></a>
             <a href="#"><img src="assests/photos/placeholder.svg" alt="instagram"></a>

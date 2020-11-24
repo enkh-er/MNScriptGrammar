@@ -537,6 +537,40 @@
             .followUs i:hover {
                 opacity: 0.6;
             }
+            
+            .contactMsg {
+                margin: 20px;
+            }
+            
+            .contactForm {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                /* align-items: center; */
+                padding: 20px;
+            }
+            
+            .contactForm h1 {
+                color: var(--wp-admin-theme-color-darkest);
+            }
+            
+            .contactForm input[type=text],
+            input[type=email],
+            textarea {
+                outline: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 18px;
+                width: 80%;
+                box-sizing: border-box;
+                resize: vertical;
+                margin-bottom: 30px;
+            }
+            
+            .contactForm button {
+                width: 200px;
+            }
             /* ===================== media query ====================== */
             
             @media only screen and (max-width: 1300px) {
@@ -560,6 +594,9 @@
                 .card,
                 .mainNavbar ul li button {
                     font-size: 18px;
+                }
+                .contactForm {
+                    width: 80%;
                 }
             }
             
@@ -605,5 +642,8 @@
                 .mainNavbar ul li button {
                     font-size: 15px;
                     margin-left: 5px;
+                }
+                .contactForm {
+                    width: 100%;
                 }
             }
