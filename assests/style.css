@@ -492,50 +492,39 @@
             footer {
                 background: var(--wp-admin-theme-color-darker-20);
                 display: flex;
-                flex-direction: column;
+                /* flex-direction: column; */
                 margin-bottom: 0;
                 justify-content: center;
                 align-items: center;
                 color: #fff;
-                padding: 10px 0px;
+                padding: 30px 0px;
             }
             
             footer p {
-                text-transform: uppercase;
+                margin: 0;
                 font-size: 16px;
                 font-weight: 400;
             }
             
-            footer img {
-                width: 30px;
-                height: 30px;
-                color: #fff;
-                margin: 10px 40px;
-                padding: 20px;
-            }
-            
-            .contactUs {
-                width: 80%;
-                border: 1px solid white;
-                border-width: 0px 0px 1px 0px;
-            }
-            
-            .contactUs,
-            .followUs {
-                display: flex;
-                padding: 10px 0px;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .followUs i {
+            footer p a {
                 color: white;
-                font-size: 30px;
-                padding-left: 30px;
             }
             
-            .followUs i:hover {
-                opacity: 0.6;
+            footer p a:hover {
+                text-decoration: none;
+            }
+            
+            footer p i {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
+            
+            .vl {
+                border-left: 3px solid white;
+                height: 200px;
+                margin-left: 5%;
+                margin-right: 5%;
             }
             
             .contactMsg {

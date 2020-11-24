@@ -41,17 +41,14 @@ export default class HomePage {
         <section id="mainBody"></section>
     </main>
     <footer>
-        <section class="contactUs">
-            <p>Холбоо барих</p>
-            <a href="#"><img src="assests/photos/gmail.svg" alt="facebook"></a>
-            <a href="#"><img src="assests/photos/telephone.svg" alt="instagram"></a>
-            <a href="#"><img src="assests/photos/placeholder.svg" alt="instagram"></a>
-
-        </section>
-        <section class="followUs">
-            <p>Биднийг дагах</p>
-            <span> <i class='fab fa-facebook'></i></span>
-            <span><i class='fab fa-instagram'></i></span>
+       <h1>Холбоо барих</h1>
+       <div class="vl"></div>
+        <section>
+        <p> <i class="material-icons">location_on</i>Улаанбаатар, сүхбаатар дүүрэг, 8-р хороо</p> <br>
+        <p> <i class='fas fa-phone'></i>9999999</p> <br>
+        <p> <i class="material-icons">email</i> <a href="#">erdeni@gmail.com </a></p> <br>
+        <p> <i class='fab fa-facebook'></i> <a href="#">https://www.facebook.com/erdeni</a> </p><br>
+        <p> <i class='fab fa-instagram'></i> <a href="#">https://www.instagram.com/erdeni</a> </p><br>
         </section>
     </footer>
                 `
