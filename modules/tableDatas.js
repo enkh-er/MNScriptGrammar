@@ -38,10 +38,7 @@ export default class TableData {
             </tbody>
         </table>
         <div>
-            <a href="#" class="btn pre-btn"><i class='fas
-                        fa-chevron-left'></i> Өмнөх</a>
-            <a href="#" class="btn nxt-btn">Дараах <i class='fas
-                        fa-chevron-right'></i></a>
+            <button class="btn nxt-btn">Дүрэм сануулах</button>
         </div>
                 
                 `

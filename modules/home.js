@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+export default class HomePage {
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assests/style.css" rel="stylesheet" type="text/css">
-    <link href="assests/stylea.css" rel="stylesheet" type="text/css">
-    <meta name="keywords" content="Mongolian script grammar, Монгол бичиг, Монгол бичиг дүрэм">
-    <meta name="author" content="Enkh gem">
-    <meta name="description" content="Mongolian script grammar web site">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <header class="navHeader">
+    Render() {
+        return `
+        <header class="navHeader">
         <nav class="navbar">
             <div class="logo">
                 <span class="bichigw">ᠡᠬᠡ<br>ᠬᠡᠯᠡ<br>ᠮᠢᠨᠦ</span>
             </div>
             <div class="menu-btn-container">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <span style="font-size:30px;cursor:pointer" id="openNav">&#9776;</span>
             </div>
             <h1>Монгол бичгийн дүрмийн хураангуй</h1>
             <div class="dropdown-menu">
@@ -102,7 +90,6 @@
             document.getElementById("sidenav").style.width = "0";
         }
     </script>
-    <script type="module" src="./modules/index.js"></script>
-</body>
-
-</html>
+                `
+    }
+}
