@@ -3,7 +3,7 @@ export default class Content {
     Render() {
         return `
         <section class="mainheader">
-            <form>
+            <form id="searchForm">
                 <input type="text" id="search" aria-label="Justify" class="searchInput" required>
                 <button id="searchBtn" class="btn btnPrimary" type="submit">хайх</button>
             </form>

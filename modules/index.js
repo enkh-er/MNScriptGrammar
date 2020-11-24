@@ -66,20 +66,19 @@ export default class Datas {
     }
 
     setTableDatas() {
-        var str;
+        let str;
         this._listButton = Array.from(document.querySelectorAll('.sidebarBtn'))
         this._listButton.forEach((route) => route.addEventListener('click', () => {
             let val = route.value;
             this._dataList.forEach((dList) => {
-                    let row = dList.content;
-                    row.forEach((d) => {
-                        if (d.list === val) {
-                            str = new TableData(d.data.title, d.data.tableHeades, d.data.tableDatas).Render();
-                        }
-                    })
+                let row = dList.content;
+                row.forEach((d) => {
+                    if (d.list === val) {
+                        str = new TableData(d.data.title, d.data.tableHeades, d.data.tableDatas).Render();
+                        gebi('table').innerHTML = str;
+                    }
                 })
-                // console.log(str);
-            gebi('table').innerHTML = str;
+            })
         }, false))
     }
 
@@ -89,9 +88,28 @@ export default class Datas {
         homePageBtn.addEventListener('click', () => {
             gebi('mainBody').innerHTML = new Content().Render();
             this.setSidebar("sidebar");
+            this.search();
         })
         contactPageBtn.addEventListener('click', () => {
             gebi('mainBody').innerHTML = new Contact().Render();
+        })
+    }
+
+    search() {
+        let str;
+        const form = document.getElementById('searchForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let val = document.getElementById('search').value;
+            this._dataList.forEach((dList) => {
+                let row = dList.content;
+                row.forEach((d) => {
+                    if (d.list.toUpperCase() === val.toUpperCase()) {
+                        str = new TableData(d.data.title, d.data.tableHeades, d.data.tableDatas).Render();
+                        gebi('table').innerHTML = str;
+                    }
+                })
+            })
         })
     }
 
@@ -104,6 +122,7 @@ export default class Datas {
         btn.addEventListener('click', () => {
             gebi('root').innerHTML = str2;
             gebi('mainBody').innerHTML = str3;
+            this.search();
             this.DownloadData();
             this.navigateTo();
         })

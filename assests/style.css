@@ -492,6 +492,7 @@
             footer {
                 background: var(--wp-admin-theme-color-darker-20);
                 display: flex;
+                overflow-x: hidden;
                 /* flex-direction: column; */
                 margin-bottom: 0;
                 justify-content: center;
@@ -587,6 +588,9 @@
                 .contactForm {
                     width: 80%;
                 }
+                footer h1 {
+                    font-size: 2rem;
+                }
             }
             
             @media only screen and (max-width: 900px) {
@@ -634,5 +638,16 @@
                 }
                 .contactForm {
                     width: 100%;
+                }
+                footer h1 {
+                    font-size: 1.4rem;
+                }
+                footer p {
+                    font-size: 15px;
+                }
+                .vl {
+                    margin-left: 3%;
+                    margin-right: 3%;
+                    height: 160px;
                 }
             }
