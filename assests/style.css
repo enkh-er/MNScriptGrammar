@@ -396,6 +396,8 @@
             .sidebarBtn {
                 line-height: 1;
                 display: inline-block;
+                width: 100%;
+                text-align: left;
                 padding: 0 10px;
                 background: none;
                 border: none;
