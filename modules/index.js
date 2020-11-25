@@ -1,10 +1,12 @@
 import { getData } from './restApi.js';
 import SideBarData from './sideBarDatas.js';
 import TableData from './tableDatas.js';
-import StartPage from './start.js'
-import HomePage from './home.js'
-import Content from './content.js'
-import Contact from './contact.js'
+import StartPage from './components/start.js'
+import HomePage from './components/home.js'
+import Content from './components/content.js'
+import Contact from './components/contact.js'
+import Login from './components/login.js'
+import Register from './components/register.js'
 
 export default class Datas {
 
@@ -112,6 +114,46 @@ export default class Datas {
         })
     }
 
+    showModal() {
+        let loginBtn = document.querySelector('#loginBtn');
+        let registerBtn = document.querySelector("#registerBtn");
+        loginBtn.addEventListener('click', () => {
+            this.showLoginModal()
+            this.closeModal();
+        })
+        registerBtn.addEventListener('click', () => {
+            this.showRegisterModal();
+            this.closeModal();
+        })
+    }
+
+    showLoginModal() {
+        gebi('modal').innerHTML = new Login().Render();
+        let redirectResiter = document.querySelector('#redirectResiter');
+        redirectResiter.addEventListener('click', () => {
+            this.showRegisterModal();
+            this.closeModal();
+        })
+    }
+    showRegisterModal() {
+        gebi('modal').innerHTML = new Register().Render();
+        let redirectLogin = document.querySelector('#redirectLogin');
+        redirectLogin.addEventListener('click', () => {
+            this.showLoginModal();
+            this.closeModal();
+        })
+
+    }
+    closeModal() {
+        let modalCloseBtn;
+        modalCloseBtn = document.querySelectorAll('#modalCloseBtn');
+        modalCloseBtn.forEach((m) => {
+            m.addEventListener('click', () => {
+                gebi('modal').innerHTML = '';
+            })
+        })
+    }
+
     start() {
         let str = new StartPage().Render();
         let str2 = new HomePage().Render();
@@ -124,6 +166,7 @@ export default class Datas {
             this.search();
             this.DownloadData();
             this.navigateTo();
+            this.showModal();
         })
 
     }

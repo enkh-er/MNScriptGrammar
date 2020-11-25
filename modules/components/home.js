@@ -15,14 +15,15 @@ export default class HomePage {
 
                 <span class="dropbtn"><i class='fas fa-user-alt'></i></span>
                 <div class="dropdown-content">
-                    <button class="dropContentBtn"> Нэвтрэх</button>
-                    <button class="dropContentBtn">Бүртгүүлэх</button>
+                    <button class="dropContentBtn" id="loginBtn"> Нэвтрэх</button>
+                    <button class="dropContentBtn" id="registerBtn">Бүртгүүлэх</button>
                     <button class="dropContentBtn">
                             Заавар</button>
                 </div>
             </div>
 
         </nav>
+        <section id="modal"></section>
         <section id="sidenav" class="sidenav"></section>
     </header>
     <main id="main">

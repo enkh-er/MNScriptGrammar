@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assests/style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="loginModal" class="modal">
+        <form class="modal-content animate">
+            <header class="modal-header">
+                <button class="btn btn-bottomBorder gridItem" type="button">
+                    Нэвтрэх
+                </button>
+                <button class="btn btn-nobottomBorder gridItem" type="button">
+                    Бүртгүүлэх
+                </button>
+            </header>
+            <input name="username" type="text" class="inputForm" aria-label="Justify" placeholder="Нэвтрэх нэр эсвэл и-мэйл" required />
+            <input name="password" type="password" class="inputForm" aria-label="Justify" placeholder="Нууц үг" required />
+
+            <div class="gridCont">
+                <button class="btn btnPrimary gridItem" type="submit">
+                    Нэвтрэх
+                </button>
+
+                <button class="btn btn-secondary gridItem" type="button" onclick="closeLoginForm()">
+                    Буцах
+                </button>
+            </div>
+            <a href="#">
+                Нууц үг мартсан?
+            </a>
+            <br />
+        </form>
+    </section>
+</body>
+
+</html>
