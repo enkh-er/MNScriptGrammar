@@ -3,7 +3,7 @@ export default class StartPage {
     Render() {
         return `
         <header class="homeHeader">
-        <h1>Монгол бичгийн зөв бичих дүрмийн толь</h1>
+        <h1>Монгол бичгийн зөв бичих дүрмийн хураангуй</h1>
         <article class="mainText">
             <span class="bichigw bichigwH1 span1">ᠡᠬᠡ</span>
             <span class="bichigw bichigwH1 span2">ᠬᠡᠯᠡ ᠊ᠢᠢᠠᠨ </span>

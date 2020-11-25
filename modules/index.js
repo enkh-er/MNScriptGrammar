@@ -178,4 +178,4 @@ const url = "https://api.jsonbin.io/b/5fba498490e7c66167f565b7/latest";
 
 const datas = new Datas(url);
 datas.start();
-setInterval(() => datas.DownloadSidebar("sidebar"), 600000);
+setInterval(() => datas.DownloadData(), 600000);
